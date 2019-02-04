@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Exercice4</title>
+</head>
+<body>
+  <form>
+    <div><label for="lastname">Nom : </label><input type="text" name="lastname" id="lastname" /></div>
+    <div><label for="firstname">Prénom : </label><input type="text" name="firstname" id="firstname" /></div>
+    <div><label for="city">Ville : </label><input type="text" name="city" id="city"/></div>
+    <div><input type="submit" name="submit" id="submit" value="valider" onclick="myFunction()"/></div>
+  </form>
+
+  <script>
+    <!-- Déclarer une fonction pour récuperer une div  -->
+
+    function myFunction()
+    {
+      <!-- utiliser getElementById pour récuperer un élément de la div --!>
+
+      var last;
+      last = document.getElementById('lastname').value;
+      var first;
+      first = document.getElementById('firstname').value;
+      var city;
+      city = document.getElementById('city').value;
+      alert(`Nom : ${last} \n Prenom : ${first} \n ville : ${city}`);
+    }
+  </script>
+
+
+</body>
+</html>

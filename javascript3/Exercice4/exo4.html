@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice4</title>
+  </head>
+  <body>
+    <form>
+    <div><label for="password">Votre mot de passe : </label><input type="text" name="password" id="password" /></div>
+    <div><label for="confirmPassword">Confirmez : </label><input type="text" name="confirmPassword" id="confirmPassword" /></div>
+    <div><input type="submit" name="submit" id="submit" value="Verification" /></div>
+  </form>
+  <script src="exo4.js"></script>
+  <script>
+    document.querySelector("#submit").onclick=function(e)
+    {
+      e.preventDefault();
+      changeBorder();
+    }
+    </script>
+
+
+  </body>
+</html>
